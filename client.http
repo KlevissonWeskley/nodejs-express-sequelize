@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:3000
+
+GET {{baseUrl}}/peoples
+Content-Type: application/json
+
+###
+
+GET {{baseUrl}}/categories
+Content-Type: application/json
+
+###
+
+GET {{baseUrl}}/courses
+Content-Type: application/json
+
+###
+
+GET {{baseUrl}}/peoples/1/registrations
+Content-Type: application/json
+
+
+###
+
+POST {{baseUrl}}/peoples/1/registrations
+Content-Type: application/json
+
+{
+    "status": "cancelado",
+    "student_id": 1,
+    "course_id": 2
+}
